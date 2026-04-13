@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Farmers_Market_API/1.0.0": {
+        "runtime": {
+          "Farmers_Market_API.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Farmers_Market_API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
