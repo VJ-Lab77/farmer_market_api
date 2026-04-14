@@ -95,3 +95,4 @@ C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\re
 C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.pdb
 C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.genruntimeconfig.cache
 C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\ref\Farmers_Market_API.dll
+C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.sourcelink.json

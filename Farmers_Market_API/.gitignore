@@ -1,0 +1,96 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files.
+
+## Build artifacts
+/bin/
+/obj/
+/**/*.user
+/**/*.userosscache
+/**/*.suo
+/**/*.cache
+/**/*.pdb
+/**/*.mdb
+/**/*.log
+/**/*.vspscc
+/**/*.vssscc
+/**/*.docstates
+
+## Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.csproj.user
+*.dbmdl
+*.opensdf
+*.sdf
+*.cache
+*.builds
+*.pidb
+*.svclog
+*.userprefs
+
+## Rider
+.idea/
+*.sln.iml
+
+## ASP.NET Temporary Files
+_ReSharper*/
+*.DotSettings.user
+*.DotSettings
+.vscode/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## NuGet
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it should be included in source control
+# !**/packages/repositories.config
+
+## Azure DevOps
+.vspscc
+*.vspcc
+*.vssscc
+
+## Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Rider
+.idea/
+*.sln.iml
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## Other
+*.db
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Core
+appsettings*.json
+
+# optional: keep appsettings.Development.json if configured in repo
+# !appsettings.Development.json
