@@ -12,14 +12,14 @@ namespace Farmers_Market_API.Controllers
 
         // GET: api/farmer
         [HttpGet]
-        public ActionResult<List<Farmer>> GetListOfFarmers()
+        public IActionResult GetListOfFarmers()
         {
             return Ok(farmers);
         }
 
         // POST: api/farmer
         [HttpPost]
-        public ActionResult<List<Farmer>> CreateFarmer([FromBody] Farmer farmer)
+        public IActionResult CreateFarmer([FromBody] Farmer farmer)
         {
             farmers.Add(farmer);
             return Ok(farmers);
@@ -27,7 +27,7 @@ namespace Farmers_Market_API.Controllers
 
         // DELETE: api/farmer?farmerId=1
         [HttpDelete]
-        public ActionResult<List<Farmer>> Delete([FromQuery] int farmerId)
+        public IActionResult Delete([FromQuery] int farmerId)
         {
             var farmer = farmers.FirstOrDefault(f => f.GetFarmerId() == farmerId);
         if (farmer != null)
@@ -40,21 +40,19 @@ namespace Farmers_Market_API.Controllers
 
         //PUT: api/farmer?name=Ibuk&newName=IbukUpdated
         [HttpPut]
-        public Farmer UpdateFarmers([FromBody] Farmer updatedFarmer)
+        public IActionResult UpdateFarmers([FromBody] Farmer updatedFarmer)
         {
             var farmer = farmers.FirstOrDefault(f => f.GetFarmerId() == updatedFarmer.GetFarmerId());
             if (farmer != null)
             {
-                farmer.FullName = updatedFarmer.FullName;
-                farmer.Email = updatedFarmer.Email;
-                farmer.PhoneNumber = updatedFarmer.PhoneNumber;
-                farmer.Location = updatedFarmer.Location;
-                farmer.Province = updatedFarmer.Province;
-                farmer.Rating = updatedFarmer.Rating;
-                farmer.IsVerified = updatedFarmer.IsVerified;
+                farmers.Remove(farmer);
+                return Ok(farmers);
             }
 
-            return null;
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }

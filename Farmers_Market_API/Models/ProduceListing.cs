@@ -31,6 +31,11 @@ namespace Farmers_Market_API.Models
             """;
         }
 
+        public double CalculateTotalPrice()
+        {
+            return PricePerKg * QuantityKg;
+        }
+
         public ProduceListing(int listingId, int farmerId, string produceName, string category, double pricePerKg, double quantityKg, bool isAvailable, DateTime harvestDate, DateTime dateListed, string? description)
         {
             ListingId = listingId;

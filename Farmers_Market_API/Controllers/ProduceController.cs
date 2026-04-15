@@ -33,7 +33,25 @@ namespace Farmers_Market_API.Controllers
             {
                 return NotFound();
             }
+            return Ok(produce);
+        }
+
+        [HttpGet("{id}/summary")]
+        public IActionResult GetProduceListingSummary(int id)
+        {
+            var produce = ProduceListings.FirstOrDefault(p => p.ListingId == id);
+            if (produce == null)
+            {
+                return NotFound();
+            }
             return Ok(produce.GetFormattedSummary());
+        }
+
+        [HttpPost]
+        public IActionResult CreateProduceListing([FromBody] ProduceListing newListing)
+        {
+            ProduceListings.Add(newListing);
+            return Created($"localhost:5192/api/Produce/{newListing.ListingId}", ProduceListings);
         }
     }
 }
