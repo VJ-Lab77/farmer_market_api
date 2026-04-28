@@ -1,0 +1,12 @@
+public struct FarmerLocation {
+	
+	public string FarName;
+	public Province Province;
+	public string Tom;
+
+	public FarmerLocation(string farName, Province province, string tom) {
+		FarName = farName;
+		Province = province;
+		Tom = tom;
+	}
+}

@@ -8,4 +8,6 @@ namespace Farmers_Market_API.Enums
         School,
         Other 
     }
+
+    
 }
