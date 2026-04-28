@@ -1,7 +1,7 @@
 ﻿using System;
 using Farmers_Market_API.Models;
 using System.Linq;
-using Enum = System.Enum;
+using Farmers_Market_API.Enums;
 namespace Farmers_Market_API.Repository
 
 {
@@ -11,25 +11,21 @@ namespace Farmers_Market_API.Repository
 
         public void addProduceListing(ProduceListing produce)
         {
-           int newId = ProduceListings.Count > 0 ? ProduceListings.Max(l => l.Id) + 1 : 1;
-           produceListings.ListingId = newId;
+            int newId = ProduceListings.Count > 0 ? ProduceListings.Max(static l => l.Id) + 1 : 1;
             ProduceListings.Add(produce);
         }
-        public ProduceListing? GetById(int id)
 
+        public ProduceListing? GetById(int id)
         {
-            
             for (int i = 0; i < ProduceListings.Count; i++)
             {
                 if (ProduceListings[i].Id == id)
                 {
-                    foundAt = i;
                     return ProduceListings[i];
                 }
             }
-            
+
             return null;
-            
         }
 
         public List<ProduceListing> GetByCategory(Category category)
@@ -66,40 +62,29 @@ namespace Farmers_Market_API.Repository
         }
     }
 
-    
-
-    
-        public List<ProduceListing> ProduceListings = new();
-
-        public ProduceListing AddProduce(ProduceListing produce)
+    public ProduceListing AddProduce(ProduceListing produce)
+    {
+        // Validation checks
+        if (string.IsNullOrWhiteSpace(produce.ProductName))
         {
-            // Validation checks
-            if (string.IsNullOrWhiteSpace(produce.Name))
-            {
-                throw new InvalidProduceFormatException("Produce name is invalid: it cannot be null or empty.");
-            }
-
-            if (produce.PricePerKg < 0)
-            {
-                throw new InvalidProduceFormatException("Produce price per kg is invalid: it cannot be negative.");
-            }
-
-            if (produce.QuantityKg < 0)
-            {
-                throw new InvalidProduceFormatException("Produce quantity in kg is invalid: it cannot be negative.");
-            }
-
-            // Assign new ID
-            int newId = ProduceListings.Any() ? ProduceListings.Max(p => p.Id) + 1 : 1;
-            produce.Id = newId;
-
-            ProduceListings.Add(produce);
-            return produce;
+            throw new InvalidProduceFormatException("Produce name is invalid: it cannot be null or empty.");
         }
+
+        if (produce.PricePerKg < 0)
+        {
+            throw new InvalidProduceFormatException("Produce price per kg is invalid: it cannot be negative.");
+        }
+
+        if (produce.QuantityKg < 0)
+        {
+            throw new InvalidProduceFormatException("Produce quantity in kg is invalid: it cannot be negative.");
+        }
+
+        // Assign new ID
+        int newId = ProduceListings.Any() ? ProduceListings.Max(static p => p.Id) + 1 : 1;
+
+        ProduceListings.Add(produce);
+        return produce;
     }
-
-
-
-
-    }
+}
 }

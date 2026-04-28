@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Farmers_Market_API.Models;
 using Farmers_Market_API.Repository;
+using Farmers_Market_API.Enums;
 namespace Farmers_Market_API.Controllers
 {
     [Route("[controller]")]
