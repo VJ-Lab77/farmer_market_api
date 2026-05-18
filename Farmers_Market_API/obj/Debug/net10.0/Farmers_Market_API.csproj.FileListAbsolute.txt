@@ -96,3 +96,15 @@ C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Fa
 C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.genruntimeconfig.cache
 C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\ref\Farmers_Market_API.dll
 C:\Users\juliu\Desktop\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.sourcelink.json
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.AssemblyInfoInputs.cache
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.AssemblyInfo.cs
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.csproj.CoreCompileInputs.cache
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.RazorAssemblyInfo.cache
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.RazorAssemblyInfo.cs
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.sourcelink.json
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.dll
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\refint\Farmers_Market_API.dll
+C:\Users\juliu\Desktop\web\farmer_market_api\Farmers_Market_API\obj\Debug\net10.0\Farmers_Market_API.pdb

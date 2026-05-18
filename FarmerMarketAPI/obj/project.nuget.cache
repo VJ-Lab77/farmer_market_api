@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gLpyffWObVM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\juliu\\Desktop\\web\\farmer_market_api\\FarmerMarketAPI\\FarmerMarketAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juliu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\juliu\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
